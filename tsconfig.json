@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    // 确保module和moduleResolution保持一致
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    // 输出目录
+    "outDir": "dist",
+    // 生成类型声明文件
+    "declaration": true,
+    "declarationDir": "dist/types",
+
+    // 目标ECMAScript版本
+    "target": "ES2020",
+    // 模块代码生成方式
+    "lib": ["ES2020", "DOM"],
+
+    // 类型检查严格模式
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // 路径别名配置，需与vite.config.ts保持一致
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}
