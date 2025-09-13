@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     // 确保module和moduleResolution保持一致
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "CommonJS",
+    "moduleResolution": "bundler", // 对应CommonJS的解析方式
 
     // 输出目录
     "outDir": "dist",
