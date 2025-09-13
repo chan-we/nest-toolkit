@@ -33,15 +33,13 @@ export default defineConfig({
     },
 
     rollupOptions: {
+      treeshake: true,
       output: {
-        globals: {
-          // 'react': 'React',
-          // 'react-dom': 'ReactDOM'
-        },
+        format: 'esm',
       },
     },
 
-    sourcemap: true,
+    sourcemap: false,
 
     // 修正 Terser 配置
     minify: 'terser',
